@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="240" height="300" version="1.1" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
+ <g transform="scale(.5)" stroke-width=".26458">
+  <path d="m160 0v180l-40-20-28 14v80l28-14 120 60v-300z" fill="#000000"/>
+  <path d="m80 260-80 40v-300h80z" fill="#323232"/>
+ </g>
+</svg>

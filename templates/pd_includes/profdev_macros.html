@@ -1,0 +1,33 @@
+{% macro navbutton(content, prefix, num, is_active=False) %}
+
+<li class="nav-item" role="presentation">
+    <a 
+        class="nav-link
+        {% if is_active %} 
+           active
+        {% else %}{% endif %}"
+        id="{{prefix}}-tb-{{num}}"
+        data-toggle="tab"
+        href="#{{prefix}}-tab-{{num}}"
+        type="button"
+        role="tab"
+        aria-controls="{{prefix}}-tab-{{num}}"
+        aria-selected="{{is_active}}"
+        >
+    {{ content | safe}}
+    </a>
+</li>
+
+{% endmacro %}
+
+{% macro navtab_start(prefix, num, is_active=False)%}
+<div 
+    class="p-3 tab-pane fade {% if is_active %}show active{% else %}{% endif %}" 
+    id="{{prefix}}-tab-{{num}}"
+    role="tabpanel" 
+    aria-labelledby="{{prefix}}-tb-{{num}}">
+{% endmacro %}
+{# Put your content here #}
+{% macro navtab_finish()%}
+</div>
+{% endmacro %}

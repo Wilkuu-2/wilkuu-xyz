@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+{% block title %}
+Wilkuu.xyz: Portfolio
+{% endblock title %}
+{% block headextra %}
+
+{% endblock headextra %}
+{% block card_title %}
+<h1>Portfolio</h1>
+{% endblock card_title %}
+
+{% block body %}
+<div id="articles" class="justify-content-center">
+    
+    {% for item in portfolio_list %}
+    <article id="A{{loop.index}}" class="card border-primary row col-11 mb-4 pb-3 justify-content-around">
+    <div class="card-header row"><h2>{{item.name}}</h2></div>
+    <div class="card-body row">
+        {{item.body | safe}}
+    </div>
+    </article>
+    {% endfor %}
+</div>
+{% endblock body %}

@@ -1,0 +1,33 @@
+{% extends "main.html" %}
+{% block title %}
+Wilkuu.xyz: Portfolio(Legacy)
+{% endblock title %}
+{% block headextra %}
+
+{% endblock headextra %}
+{% block card_title %}
+<h1>Portfolio old content</h1>
+{% endblock card_title %}
+
+{% block body %}
+
+<div>
+    <div class="card border-secondary mb-4 pb-3 justify-content-center">
+        <div class="card-header justify-content-center"><h1>New portfolio coming soon!<h1></div>
+        <div class="card-body ">
+            <p>This portfolio is the original portfolio that has been maintaned for the last two years.<br>
+            Since a database has added to the project, the portfolio page is going to revamped.</p>
+            <a href="/portfolio">See the progress</a>
+        </div>
+
+    </div>
+</div>
+<div id="articles">
+    
+    {% for item in portfolio_list %}
+    <article id="A{{loop.index}}" class="card border-secondary row mx-1 px-1 mb-4 pb-3 justify-content-center">
+        {{item | safe}}
+    </article>
+    {% endfor %}
+</div>
+{% endblock body %}

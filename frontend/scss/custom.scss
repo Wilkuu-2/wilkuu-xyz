@@ -1,0 +1,50 @@
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2  Add any default variable overrides here 
+@import "./_variables.scss";
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-self: top;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+pre {
+    color: #fff;
+}
+
+
+
+footer>div {
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+.fb {
+    text-align: center;
+    padding-top: .1rem; 
+    padding-bottom: .1rem;
+    line-height: 1.2;
+}
+ 
+.fb > i {
+    align-items: center;
+    font-size: 2.0rem;
+}
+
+.fb:hover {
+    background-color: #00000060;
+}
+
+@import './danger.scss';
+@import './animated_bg.scss';

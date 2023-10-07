@@ -1,0 +1,94 @@
+{% import "pd_includes/profdev_macros.html" as pm %}
+{% extends "main.html" %}
+{% block title %}
+Jakub's Profdev Challenge
+{% endblock title %}
+
+{% block headextra %}
+<link rel="stylesheet" href="/static/css/profdev.css">
+{% endblock headextra %}
+
+{% block body %}
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h1>Welcome my Profdev Journey</h1>
+            </div>
+            <div class="card-body">
+                <div class=card-subtitle>
+                    <h5>This page is a summative showcase of the 
+                        <i><b><strike>suffering</strike></b></i>
+                        experiences, we CreaTe students call ProfDev.
+                    </h5>
+                    <h6>
+                    Even though I still did not manage to finish ProfDev 
+                    <i>(Damn you Module 5!)</i>, I still got plenty to show.
+                        Here is the place where you can see the fruits of my labour in short and concise bits!
+                    </h6>
+                </div>
+                <div>
+                    <img class="w-100 d-block" src="/static/img/rivier.jpg"alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h1>Future!</h1>
+            </div>
+            <div class="card-body">
+                <div class="card-subtitle">
+                    <h5>This are my future plans for ProfDev:</h5>
+                </div>
+                <div class="row mb-2 rounded py-2">
+                    <div class="col-lg-1 mr-2 "><i class="fa-solid fa-money-bill-trend-up ficon"></i></div>
+                    <div class="col-lg">
+                        <h6><b>Start freelancing for real. (Or find a REAL job)</b></h6>
+                        <p>Now that I developed some skills that people ordinarily get paid for... It might be time to actually get paid for them.
+                        I want to do that mostly through freelancing, but a good job is not something I'd scoff at.</p>
+                    </div>
+                </div>
+                <div class="row mb-2 rounded py-2">
+                    <div class="col-lg-1 mr-2 "><i class="fa-solid fa-brush ficon"></i></div>
+                    <div class="col-lg">
+                        <h6><b>Make some art</b></h6>
+                        <p>This is something that I always wanted to do more, but didn't have time too.
+                        I hope I can develop myself more in the art direction in the future.</p>
+                    </div>
+                </div>
+                <div class="row mb-2 rounded py-2">
+                    <div class="col-lg-1 mr-2 "><i class="fa-solid fa-bullhorn ficon"></i></div>
+                    <div class="col-lg">
+                        <h6><b>Redo Module 5</b></h6>
+                        <p>This time, newtwork a bit more and stress less.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="2" class="my-2 row"> 
+    <div class="col-lg-6">
+        {% include "pd_includes/challenges.html"%}
+    </div>
+    <div class="col-lg-6">
+        {% include "pd_includes/adventures.html"%}
+    </div>
+</div>
+<div id="1" class="my-2 row"> 
+    <div class="col-lg-4 my-2">
+        {% include "pd_includes/strengths.html"%}
+    </div>
+    <div class="col-lg-4 my-2">
+        {% include "pd_includes/important_lessons.html"%}
+    </div>
+    <div class="col-lg-4 my-2">
+        {% include "pd_includes/tips.html"%}
+    </div>
+</div>
+
+
+{% endblock body %}

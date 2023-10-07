@@ -1,0 +1,23 @@
+{
+  "name": "website_warp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rollup": "^3.28.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "sass": "^1.65.1",
+    "tslib": "^2.6.1",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "4.5.3"
+  }
+}

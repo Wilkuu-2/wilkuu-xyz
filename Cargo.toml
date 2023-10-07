@@ -1,0 +1,23 @@
+[package]
+name = "wilkuu_xyz_actix"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name="wilkuu_xyz_server"
+path="rs/main.rs"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-files = { version = "0.6.2", features = ["actix-server", "tokio-uring"] }
+actix-web = "4.4.0"
+chrono = { version = "0.4.31", features = ["serde"] }
+dotenv = "0.15.0"
+env_logger = "0.10.0"
+futures = "0.3.28"
+serde = { version = "1.0.188", features = ["std", "derive"] }
+sqlx = { version = "0.7.1", features = ["chrono", "mysql", "sqlite", "runtime-tokio-native-tls", "tls-native-tls", "uuid"] }
+tera = "1.19.1"
+tokio = "1.32.0"

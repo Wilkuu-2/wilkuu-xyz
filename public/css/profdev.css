@@ -1,0 +1,12 @@
+.card:hover {
+    border-color: var(--primary);
+} 
+
+.card {
+    border-color: var(--secondary);
+    
+}
+
+.ficon{
+    font-size: 4em;
+}

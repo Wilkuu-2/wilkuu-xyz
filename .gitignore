@@ -1,0 +1,4 @@
+/target
+.env
+.sqlx
+/public/bundle.*

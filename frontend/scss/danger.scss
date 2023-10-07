@@ -1,0 +1,67 @@
+/* Danger */
+
+:root{
+    --stripe-size: 100px;
+    --color-1: #c0b040;
+    --color-2: #444;
+    --duration: 4s; 
+}
+
+.danger_root {
+    display: flex; 
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+} 
+
+.danger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.danger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(120% + var(--stripe-size));
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--color-2) 25%, 
+        var(--color-2) 50%, 
+        var(--color-1) 50%, 
+        var(--color-1) 75% 
+    );
+    background-size: var(--stripe-size) var(--stripe-size);
+    animation: stripeTransform var(--duration) linear infinite;
+}
+
+.danger_inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background: none;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    text-shadow: 0 0 6px #000;   
+}
+
+@keyframes stripeTransform {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(var(--stripe-size)* -2));
+    }
+}

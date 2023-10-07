@@ -1,0 +1,36 @@
+
+@keyframes bgMove{
+	from{
+		transform: translate(0px,0px)
+	}
+	to{
+		transform: translate(8196px,2048px)
+	}
+}
+
+#bgElement{
+	background-color: var(--backdrop-0);
+	position: fixed;
+	overflow: hidden;
+	left: 0%;
+	top: 0%;
+	margin: 0px; 
+	padding: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+
+#bgElement::before {
+	content: "";
+	width: 2000%;
+	height: 1200%;
+	position: absolute;
+	left: -1000%;
+	top: -600%; 
+	background-image: url("/static/img/bg.png");
+	animation-name: bgMove;
+	animation-duration: 150s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}

@@ -1,0 +1,95 @@
+{% import "pd_includes/profdev_macros.html" as pm %}
+<div class="card">
+    <div class="card-header">
+        <h2>Challenges</h2>
+    </div>
+    <div class="card-body">
+        <nav>
+            <ul class="nav nav-tabs nav-fill" id="nav-tab-ch" role="tablist">
+                {{ pm::navbutton(
+                    content="Hard Skills",
+                    prefix="ch",
+                    num=1,
+                    is_active=true,
+                ) }} 
+
+                {{ pm::navbutton(
+                    content="Soft Skills",
+                    prefix="ch",
+                    num=2,
+                ) }} 
+                {{ pm::navbutton(
+                    content="Habits",
+                    prefix="ch",
+                    num=3,
+                ) }}
+                {{ pm::navbutton(
+                    content=`Networking&nbsp;<i class="fa-solid fa-skull"></i>`,
+                    prefix="ch",
+                    num=4,
+                ) }}
+            </ul>
+        </nav>
+        <div class="tab-content">
+            {{pm::navtab_start(prefix="ch",num=1,is_active=True)}}
+            <h5>Learning to Code</h5>
+            <p>I know quite some programming languages.  
+            At this moment I know C++, HTML, CSS, JavaScript, Python, SQL, Rust, PHP, Bash, Lua and Vimstript.
+            Some of them were not through ProfDev, but learing C++ was my Module 2 Challenge.
+            I want to repeat that experience with some other language soon!
+            </p>
+            <h5>Game Development</h5>
+            <p>
+            Even though making games has a lot of coding in it. 
+            It is worth to put it on it's own, since it involves a ton of other epic skills :-P.
+            </p>
+            {{pm::navtab_finish()}}
+            {{pm::navtab_start(prefix="ch",num=2)}}
+            <h5>Mindfullness</h5>
+            <p>
+            Sometimes stress and bad thoughts might be a big obstacle. Mindfullness helps with clearing up the fog.
+            </p>
+            <h5>Productivity</h5>
+            <p>
+            Being productive is being a good money maker, thus a good professional.
+            </p>
+            <h5>Reflection</h5>
+            <p>
+            Reflecting on things is an important part of ProfDev and helps you in making better choices in the future!
+            </p>
+            {{pm::navtab_finish()}}
+            {{pm::navtab_start(prefix="ch",num=3)}}
+            <h5>Tracking habits</h5>
+            <p>
+            Changing your habits helps you make the most out of your time. 
+            This skill helps you keep yourself busy, working and healthy.
+            During my Module 4 challenge it maintained a habit of drawing everyday.
+            </p>
+            <h6>This are the habits I managed to hold onto afterwards:</h6>
+            <ul>
+                <li>
+                    <strike>Drawing</strike>
+                </li>
+                <li>
+                    Going to the <abbr title="Protoine society soon!">Gym</abbr>.
+                </li>
+                <li>
+                    Learning Japanese on Duolingo
+                </li>
+                <li>
+                    <strike>Meditating every day</strike>
+                    (Forgot about it recently)
+                </li>
+            </ul>
+            {{pm::navtab_finish()}}
+            {{pm::navtab_start(prefix="ch",num=4)}}
+            <h5>Skill issue</h5>
+            <p>
+                Because of burnout in Module 5 I did not manage to network much during the Challenge.
+                I hope I can correct it next time. 
+            </p>
+            <img class="w-50" src="/static/img/failure.png"alt="">
+            {{pm::navtab_finish()}}
+        </div>
+    </div>
+</div>
