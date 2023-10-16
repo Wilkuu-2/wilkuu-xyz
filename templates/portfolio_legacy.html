@@ -25,7 +25,7 @@ Wilkuu.xyz: Portfolio(Legacy)
 <div id="articles">
     
     {% for item in portfolio_list %}
-    <article id="A{{loop.index}}" class="card border-secondary row mx-1 px-1 mb-4 pb-3 justify-content-center">
+    <article id="A{{loop.index}}" class="card border-secondary row mx-1 px-3 py-2 mb-4 pb-3 justify-content-center">
         {{item | safe}}
     </article>
     {% endfor %}
